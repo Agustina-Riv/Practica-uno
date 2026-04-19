@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Practicando para la prueba</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Pagina de Practicas</h1>
+            <nav aria-label="Menu pricipal">
+                <ul aria-current="Page">
+                    <li>
+                        <a href="#" aria-current="Menu principal">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="#Temas">Temas</a>
+                    </li>
+
+                    <li>
+                        <a href="#Ejercicios">Ejercicios</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container">
+            <section id="Temas" aria-labelledby="intro-tittle">
+                <h2 id="intro-tittle">Temas para practicar:</h2>
+                <p>Practicar es muy importante para ejercitar lo prendido, hoy veremos <strong>HTML, CSS y JS</strong></p>
+
+                <aside>
+                    <h2>Nota al margen</h2>
+                    <p>¿Cual es este contenido?</p>
+                </aside>
+
+            </section>
+
+            <hr>
+
+            <section id="Ejercicios" aria-labelledby="form-titlle">
+                <h2 id="form-titlle">Formulario para pedir ejercicios</h2>
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" aria-required="true" required>
+
+                    <label for="telefono">Telefono</label>
+                    <input type="number" id="telefono" name="telefono" aria-required="false">
+
+                    <label for="recomendaciones">Recomendaciones</label>
+                    <input type="text" id="recomendaciones" name="recomendaciones" aria-required="false">
+
+                    <button type="submit">Enviar</button>
+                </div>
+
+            </section>
+
+        </main>
+
+        
+
+
+    </body>
+
+
+
+</html>
