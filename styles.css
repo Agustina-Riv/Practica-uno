@@ -36,19 +36,68 @@ nav a {
 
 .container {
     background-color: rgb(108, 118, 207);
+    box-sizing: border-box;
+    border: 2px solid black;
 }
 
 #Ejercicios {
     background-color: beige;
     padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 600px;
+}
+#Ejercicios h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
 }
 
-#form-titlle {
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: rgb(108, 118, 207);
+    outline: none;
+    box-shadow: 0 0 5px rgba(108, 118, 207, 0.5);
+}
+.form-titlle {
     text-align: center;
 }
 #recomendaciones {
     padding: 3rem;
 }
-button {
-    padding: 1rem 2rem;
+
+.form-group button {
+    padding: 0.75rem 1.5rem;
+    background-color: rgb(108, 118, 207);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+.form-group button:hover {
+    background-color: rgb(88, 98, 187);
 }
